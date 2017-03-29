@@ -1,15 +1,15 @@
 /**
  * Created by xiaoconglau on 29/03/2017.
  */
-export default function app( state = { count: 1 }, action ) {
+export default function home( count = 0, action ) {
     switch ( action.type ) {
         case "add": {
-            let c = state.count + 1;
-            return { count: c }
+            let c = count + 1;
+            return c
         }
             break;
         default: {
-            return state;
+            return count;
         }
     }
 
